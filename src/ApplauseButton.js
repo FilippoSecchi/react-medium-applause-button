@@ -29,7 +29,7 @@ const ApplauseButton = () => {
     setIsActive(true);
     setIsClicked(true);
     setHasInteracted(true);
-    setTotalApplause(prevState => prevState + 1);
+    setTotalApplause((prevState) => prevState + 1);
   };
 
   useEffect(() => {
@@ -52,6 +52,7 @@ const ApplauseButton = () => {
 
   return (
     <div className="container">
+      <h1>Medium Applause Button</h1>
       <div className="outer-container">
         <button
           type="button"
